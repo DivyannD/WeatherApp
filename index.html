@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Weather App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body style="background-image: url(assets/background.jpg);">
+    <div class="card">
+      <div class="search">
+        <input type="text" placeholder="Enter City Name" spellcheck="false">
+          <button><img src="assets/search.png" alt="alt"></button>
+      </div>
+      <div class="error">
+        <p>Invalid City Name</p>
+      </div>
+      <div class="weather">
+        <img src="assets/rain.png" alt="weather-icon" class="weather-icon">
+        <h1 class="temp">22°C</h1>
+        <h2 class="city">Mumbai</h2>
+        <div class="details">
+          <div class="col">
+            <img src="assets/humidity.png">
+            <div>
+              <p class="humidity">50%</p>
+              <p>Humidity</p>
+            </div>
+            <div class="col">
+              <img src="assets/wind.png">
+              <div>
+                <p class="wind">15 km/h</p>
+                <p>Wind Speed</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js">
+      // const apiKey = "abf23a51baaa1a73e725a5d3f94fdf18";
+      // const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=bangalore";  
+      // async function checkWeather(){
+      //   const response = await fetch(apiUrl + `&appid=${apiKey}`);
+      //   var data = await response.json;
+      //   console.log(data)
+      // }
+      // checkWeather()
+    </script>
+  </body>
+</html>
